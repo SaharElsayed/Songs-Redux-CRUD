@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/Songs-Redux-CRUD/static/js/main.b83ec664.chunk.js",
+    "main.js.map": "/Songs-Redux-CRUD/static/js/main.b83ec664.chunk.js.map",
+    "runtime~main.js": "/Songs-Redux-CRUD/static/js/runtime~main.702ec721.js",
+    "runtime~main.js.map": "/Songs-Redux-CRUD/static/js/runtime~main.702ec721.js.map",
+    "static/js/2.8a48a680.chunk.js": "/Songs-Redux-CRUD/static/js/2.8a48a680.chunk.js",
+    "static/js/2.8a48a680.chunk.js.map": "/Songs-Redux-CRUD/static/js/2.8a48a680.chunk.js.map",
+    "index.html": "/Songs-Redux-CRUD/index.html",
+    "precache-manifest.a75a3d10e48564cea189b77c14823a0c.js": "/Songs-Redux-CRUD/precache-manifest.a75a3d10e48564cea189b77c14823a0c.js",
+    "service-worker.js": "/Songs-Redux-CRUD/service-worker.js"
+  }
+}
