@@ -8,6 +8,8 @@ import SongShow from './songs/SongShow.component';
 import Header from './Header.component';
 import NotFound from './NotFound.component';
 
+import Loader from 'react-loader-spinner'
+
 import history from '../history';
 
 const App = () => {
@@ -26,7 +28,13 @@ const App = () => {
                     </Switch>
                 </div>
             </Router>
-        </div >
+
+            {/* <Loader
+                type="ThreeDots" color="#somecolor" height={80} width={80} visible={false}
+            /> */}
+        </div>
+
+
     );
 };
 
