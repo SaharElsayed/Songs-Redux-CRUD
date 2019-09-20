@@ -6,7 +6,7 @@ import SongForm from './SongForm.component';
 class SongEdit extends React.Component {
 
     componentDidMount() {
-        this.props.fetchSong(this.props.match.params.id)
+        this.props.fetchSong(this.props.computedMatch.params.id)
     }
 
     onSubmit = (formValues) => {
@@ -14,9 +14,9 @@ class SongEdit extends React.Component {
     }
 
     render() {
-        if (!this.props.song) {
-            return <div>Loading...</div>
-        }
+        // if (!this.props.song) {
+        //     return <div>Loading...</div>
+        // }
         return (
             <div>
                 <h3>Edit a song</h3>
@@ -31,7 +31,7 @@ class SongEdit extends React.Component {
 
 const mapStateToProps = (state, ownProps) => {
 
-    return { song: state.songs[ownProps.match.params.id] }
+    return { song: state.songs[ownProps.computedMatch.params.id] }
 }
 
 export default connect(mapStateToProps, { fetchSong, editSong })(SongEdit);
