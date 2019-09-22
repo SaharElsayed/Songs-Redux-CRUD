@@ -8,8 +8,6 @@ import SongShow from './songs/SongShow.component';
 import Header from './Header.component';
 import NotFound from './NotFound.component';
 
-import Loader from 'react-loader-spinner'
-
 import history from '../history';
 
 const App = () => {

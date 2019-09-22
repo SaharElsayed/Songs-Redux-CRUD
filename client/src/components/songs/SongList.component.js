@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom'
 import { fetchSongs } from '../../actions/index';
+import MaterialIcon from 'react-google-material-icons'
 
 class SongList extends React.Component {
     componentDidMount() {
@@ -23,7 +24,9 @@ class SongList extends React.Component {
                 return (
                     <div className="item" key={song.id}>
                         {this.renderAdmin(song)}
-                        <i className="large middle aligned icon music" />
+                        <i className="large middle aligned icon">
+                            <MaterialIcon icon="queue_music" size={36} />
+                        </i>
                         <div className="content">
                             <Link className="header" to={`/songs/${song.id}`}>{song.title}</Link>
                             <div className="description">{song.description}</div>
