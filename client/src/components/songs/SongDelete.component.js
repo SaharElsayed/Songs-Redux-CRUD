@@ -8,11 +8,11 @@ import { fetchSong, deleteSong } from '../../actions/index';
 
 class SongDelete extends React.Component {
     componentDidMount() {
-        this.props.fetchSong(this.props.match.params.id);
+        this.props.fetchSong(this.props.computedMatch.params.id);
     }
 
     renderActions = () => {
-        const { id } = this.props.match.params;
+        const { id } = this.props.computedMatch.params;
         return (
             <React.Fragment>
                 <button
@@ -48,7 +48,7 @@ class SongDelete extends React.Component {
 
 const mapStateToProps = (state, ownProps) => {
 
-    return { song: state.songs[ownProps.match.params.id] }
+    return { song: state.songs[ownProps.computedMatch.params.id] }
 }
 
 export default connect(mapStateToProps, { fetchSong, deleteSong })(SongDelete);

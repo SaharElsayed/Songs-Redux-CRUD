@@ -14,6 +14,7 @@ const requestHandler = (request) => {
         // Modify request here
         //   request.headers['X-CodePen'] = 'https://codepen.io/teroauralinna/full/vPvKWe'
         console.log(request);
+
     }
     return request
 }
@@ -28,7 +29,7 @@ const errorHandler = (error) => {
 }
 
 const successHandler = (response) => {
-    // console.log(response);
+    console.log(response);
 
     if (isHandlerEnabled(response.config)) {
         // Handle responses

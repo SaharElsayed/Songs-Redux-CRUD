@@ -4,13 +4,13 @@ import { fetchSong } from '../../actions/index';
 
 class SongShow extends React.Component {
     componentDidMount() {
-        this.props.fetchSong(this.props.match.params.id);
+        this.props.fetchSong(this.props.computedMatch.params.id);
 
     }
     render() {
-        if (!this.props.song) {
-            return <div>Loading...</div>
-        }
+        // if (!this.props.song) {
+        //     return <div>Loading...</div>
+        // }
 
         const { title, description } = this.props.song;
 
@@ -24,7 +24,7 @@ class SongShow extends React.Component {
 }
 
 const mapStateToProps = (state, ownProps) => {
-    return { song: state.songs[ownProps.match.params.id] }
+    return { song: state.songs[ownProps.computedMatch.params.id] }
 }
 
 export default connect(mapStateToProps, { fetchSong })(SongShow);
